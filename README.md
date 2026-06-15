@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
-> A full-stack retail analytics pipeline built on the  Store Sales Dataset — covering anomaly detection, seasonal analysis, store segmentation, market basket inference, and demand forecasting with XGBoost.
+> A full-stack retail analytics pipeline built on the  Store Sales Dataset - covering anomaly detection, seasonal analysis, store segmentation, market basket inference, and demand forecasting with XGBoost.
 
 ---
 
@@ -112,7 +112,7 @@ Type           → Store format: A (large) | B (mid) | C (small)
 Size           → Retail floor area in square feet
 ```
 
-> **Note:** Data files are loaded automatically in the notebook via GitHub raw URLs — no manual upload required.
+> **Note:** Data files are loaded automatically in the notebook via GitHub raw URLs - no manual upload required.
 
 ---
 
@@ -122,11 +122,11 @@ Size           → Retail floor area in square feet
 
 Detects unusual sales patterns using three complementary methods:
 
-- **Z-Score Analysis** — Flags rows with |z| > 3 within each Store-Department group
-- **IQR Method** — Flags values outside Q1 − 1.5×IQR and Q3 + 1.5×IQR
-- **Isolation Forest** — Unsupervised ensemble anomaly detection across all features (contamination = 2%)
+- **Z-Score Analysis** - Flags rows with |z| > 3 within each Store-Department group
+- **IQR Method** - Flags values outside Q1 − 1.5×IQR and Q3 + 1.5×IQR
+- **Isolation Forest** - Unsupervised ensemble anomaly detection across all features (contamination = 2%)
 
-Strong anomalies (both Z-Score AND Isolation Forest agree) represent highest-confidence unusual observations. Most anomalies were found to be holiday-driven or heavy-markdown weeks — legitimate business events, not data errors.
+Strong anomalies (both Z-Score AND Isolation Forest agree) represent highest-confidence unusual observations. Most anomalies were found to be holiday-driven or heavy-markdown weeks - legitimate business events, not data errors.
 
 ---
 
@@ -179,7 +179,7 @@ Since individual transaction data is unavailable, **department co-sales correlat
 - Promotional: MarkDown_Total, MarkDown_Active
 - Historical: Sales_Lag_1W, Sales_Lag_4W, Sales_Lag_52W, Sales_Roll4W
 
-**Train/Test Split:** Time-based — train on data before Aug 2012, test on Aug–Oct 2012
+**Train/Test Split:** Time-based - train on data before Aug 2012, test on Aug–Oct 2012
 
 **Models compared:**
 
@@ -202,14 +202,14 @@ Validated with **5-fold TimeSeriesSplit cross-validation** to confirm no overfit
 ✅ Segmentation         →  3 clusters, Silhouette Score = 0.2632
 ✅ Top Dept Pairs       →  15 high-correlation cross-sell pairs identified
 ✅ Forecast (XGBoost)  →  Best RMSE, R² ≈ 0.88, consistent CV performance
-✅ Top Predictor        →  Sales_Lag_52W (year-ago sales) — strongest feature
+✅ Top Predictor        →  Sales_Lag_52W (year-ago sales) - strongest feature
 ```
 
 ---
 
 ## 🚀 How to Run
 
-### Option 1 — Google Colab (Recommended)
+### Option 1 - Google Colab (Recommended)
 
 1. Click the notebook file `Integrated_Retail_Analytics_Complete.ipynb`
 2. Click **Open in Colab** (top of the file preview)
@@ -217,7 +217,7 @@ Validated with **5-fold TimeSeriesSplit cross-validation** to confirm no overfit
 
 > Data downloads automatically from this GitHub repo. No file uploads needed.
 
-### Option 2 — Run Locally
+### Option 2 - Run Locally
 
 ```bash
 # Clone the repository
@@ -281,10 +281,10 @@ All chart images are saved to the `outputs/` folder during notebook execution.
 
 ### Top Business Findings
 
-- **Seasonality > Economics** — Week-of-year and lag features outperform CPI/unemployment in forecasting
-- **Markdowns have diminishing returns** — Beyond a threshold, deeper discounts don't proportionally increase volume
-- **Store type mediates everything** — Identical departments behave very differently across Type A vs C stores
-- **Year-ago sales are the strongest predictor** — Sales_Lag_52W is the #1 or #2 most important feature in XGBoost
+- **Seasonality > Economics** - Week-of-year and lag features outperform CPI/unemployment in forecasting
+- **Markdowns have diminishing returns** - Beyond a threshold, deeper discounts don't proportionally increase volume
+- **Store type mediates everything** - Identical departments behave very differently across Type A vs C stores
+- **Year-ago sales are the strongest predictor** - Sales_Lag_52W is the #1 or #2 most important feature in XGBoost
 
 ---
 
@@ -310,7 +310,7 @@ All chart images are saved to the `outputs/` folder during notebook execution.
 
 ## 📄 License
 
-This project is licensed under the Apache 2.0 License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
