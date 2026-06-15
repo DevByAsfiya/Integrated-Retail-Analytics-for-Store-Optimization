@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
-> A full-stack retail analytics pipeline built on the Walmart Store Sales Dataset — covering anomaly detection, seasonal analysis, store segmentation, market basket inference, and demand forecasting with XGBoost.
+> A full-stack retail analytics pipeline built on the  Store Sales Dataset — covering anomaly detection, seasonal analysis, store segmentation, market basket inference, and demand forecasting with XGBoost.
 
 ---
 
@@ -28,7 +28,7 @@
 
 ## 📖 Project Overview
 
-This project delivers a five-component retail analytics solution that transforms raw Walmart store sales data into actionable business intelligence:
+This project delivers a five-component retail analytics solution that transforms raw  store sales data into actionable business intelligence:
 
 | Component | Method | Output |
 |---|---|---|
@@ -91,7 +91,7 @@ Integrated-Retail-Analytics-for-Store-Optimization/
 
 ## 📊 Dataset
 
-The analysis uses three publicly available Walmart sales dataset files:
+The analysis uses three publicly available sales dataset files:
 
 | File | Rows | Columns | Description |
 |---|---|---|---|
