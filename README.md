@@ -301,8 +301,8 @@ All chart images are saved to the `outputs/` folder during notebook execution.
 
 ## 👤 Author
 
-**[Your Name]**
-[Your LinkedIn] · [Your Email]
+**Asfiya Mukthasar**
+(https://www.linkedin.com/in/asfiya-mukthasar-1b56a126a/) · afiaartedu@gmail.com
 
 *Submitted as part of the Integrated Retail Analytics Project*
 
